@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="NetworkExample:jar">
+    <output-path>J:/Desktop2016School</output-path>
+    <root id="archive" name="NetworkExample.jar">
+      <element id="module-output" name="NetworkExample" />
+      <element id="extracted-dir" path="J:/kryonet-2.21-all.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
