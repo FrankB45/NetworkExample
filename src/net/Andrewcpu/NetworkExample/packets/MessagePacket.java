@@ -1,8 +1,5 @@
 package net.Andrewcpu.NetworkExample.packets;
 
-/**
- * Created by stein on 3/9/2017.
- */
 public class MessagePacket {
     private String user;
     private String message;

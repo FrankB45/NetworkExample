@@ -31,7 +31,8 @@ public class ChatUI extends JFrame implements KeyListener{
     }
     @Override
     public void paint(Graphics graphics){
-
+        graphics.drawRect(10,10,10,10);
+        repaint();
     }
 
     @Override
@@ -44,6 +45,22 @@ public class ChatUI extends JFrame implements KeyListener{
         if(e.getKeyCode()==KeyEvent.VK_ENTER){
             String s = JOptionPane.showInputDialog(null,"Enter a message");
             clientManager.sendMessage(s);
+        }
+        if(e.getKeyCode()==KeyEvent.VK_W)
+        {
+            clientManager.sendCord("y+");
+        }
+        if(e.getKeyCode()==KeyEvent.VK_S)
+        {
+            clientManager.sendCord("y-");
+        }
+        if(e.getKeyCode()==KeyEvent.VK_D)
+        {
+            clientManager.sendCord("x+");
+        }
+        if(e.getKeyCode()==KeyEvent.VK_A)
+        {
+            clientManager.sendCord("x-");
         }
     }
 
